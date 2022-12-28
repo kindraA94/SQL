@@ -1,0 +1,23 @@
+--Create a DOG TREAT store database
+
+
+CREATE TABLE dog_treats (id INTEGER PRIMARY KEY, flavor TEXT, quantity INTEGER, weight INTEGER, price INTEGER);
+
+INSERT INTO dog_treats VALUES (1, "peanutbutter", 30, 22.5, 50);
+INSERT INTO dog_treats VALUES (2, "beef", 25, 20, 35);
+INSERT INTO dog_treats VALUES (3, "chicken", 30, 30, 75);
+INSERT INTO dog_treats VALUES (4, "sweetpotato", 25, 22.5, 35);
+INSERT INTO dog_treats VALUES (5, "salmon", 15, 10.5, 30);
+INSERT INTO dog_treats VALUES (6, "blueberry", 20, 15, 15);
+INSERT INTO dog_treats VALUES (7, "vanilla", 10, 5, 40);
+INSERT INTO dog_treats VALUES (8, "blueberry_fish", 10, 10.5, 15);
+INSERT INTO dog_treats VALUES (9, "peanutbutter_chicken", 35, 50, 65);
+INSERT INTO dog_treats VALUES (10, "strawberry_sweetpotato", 15, 15, 30);
+
+--display the database ordered by price.
+
+SELECT * FROM dog_treats ORDER BY price;
+
+--what is the SUM price of items in the weight section? 
+
+SELECT sum(quantity) FROM weight;
